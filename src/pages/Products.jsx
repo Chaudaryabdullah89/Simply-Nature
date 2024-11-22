@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ShopContext } from "../Context/Shopcontext";
 import assets from "../assets/assets";
+import RelatedProducts from "../components/Relatedproducts";
 const Products = () => {
   const { productid } = useParams();
   const { products, currency } = useContext(ShopContext);
@@ -108,6 +109,8 @@ const Products = () => {
           </p>
         </div>
       </div>
+      <h2 className="text-semibold text-center text-5xl my-24" >Related Product </h2>
+      <RelatedProducts category={productdata.category} subCategory={productdata.subCategory} />
     </div>
   ) : (
     <div>
