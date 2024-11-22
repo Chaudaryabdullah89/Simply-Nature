@@ -14,7 +14,7 @@ const Navbar = () => {
     <p className=' text-2xl' >Simply Nature</p>
 </div>
     </div>
-    <div className='flex gap-16' >
+    <div className='flex gap-16 mt-3 ' >
 
     <div className='flex gap-6 mt-3' >
         <div className='flex flex-col' >
@@ -31,7 +31,7 @@ const Navbar = () => {
         </div>
         <div className='flex flex-col' >
 
-        <NavLink to='/aboutus' className='text-md text-gray-500 hover:text-red-600' >About Us</NavLink>☺
+        <NavLink to='/aboutus' className='text-md text-gray-500 hover:text-red-600' >About Us</NavLink>
         <hr hidden />
         </div>
 
