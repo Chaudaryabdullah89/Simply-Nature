@@ -43,7 +43,7 @@ const Products = () => {
             </div>
           </div>
           {/* Dertailes loading */}
-          <div className="flex-col w-full flex gap-2 text-start sm:w-[36%] px-5 sm:pl-0 ">
+          <div className="flex-col w-full flex gap-2 text-start sm:w-[45%] px-5 sm:pl-0 ">
             <h1 className="font-semibold text-2xl ">{productdata.name}</h1>
             <div className="flex items-center gap-1 mt-2">
               <img src={assets.star_icon} alt="" className="w-3 5" />
@@ -91,7 +91,7 @@ const Products = () => {
             Description
           </h2>
           <h2 className="text-lg border py-2 px-3 font-semibold">
-            Reviews(541)
+            Reviews (541)
           </h2>
         </div>
         <div className="border px-4 py-8 flex flex-col gap-5 text-gray-500" >
