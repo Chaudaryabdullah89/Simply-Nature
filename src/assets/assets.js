@@ -57,7 +57,7 @@ export const products = [
         image: [p_img1, p_img10],
         category: "Cactus",
         subCategory: "Indoor Plants",
-        sizes: ["Small", "Medium", "Large"],
+        sizes: ["Small", "Medium", "Big"],
         date: 1716634345448,
         bestseller: true
     },

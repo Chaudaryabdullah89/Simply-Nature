@@ -12,7 +12,7 @@ const Productitem = ({ id, name, price, image,category }) => {
                     <img src={image[0]} alt="" className='hover:scale-110 transition-all ease-in-out rounded-lg ' />
                 </div>
                 <p className='text-gray-400 pt-4 '>{category}</p>
-                <p className='pt-2 pb-1 text-sm font-semibold text-lg'>{name}</p>
+                <p className='pt-2 pb-1  font-semibold text-lg'>{name}</p>
                 <div className='flex items-center'>
                     {[...Array(5)].map((_, index) => (
                         <i key={index} className='ri-star-fill text-yellow-500'></i>

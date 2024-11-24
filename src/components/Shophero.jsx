@@ -2,7 +2,7 @@ import React from 'react'
 const Shophero = () => {
   return (
     <div
-    className="h-full md:h-[50vh] bg-center bg-no-repeat -mt-28 top-0 left-0 -z-50 bg-cover"
+    className="h-full md:h-[50vh] bg-center bg-no-repeat -mt-40 top-0 left-0 -z-50 bg-cover"
     style={{
       backgroundImage:
         "url(https://websitedemos.net/plant-store-02/wp-content/uploads/sites/410/2020/07/store-bg.jpg)",
