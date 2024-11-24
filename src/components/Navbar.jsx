@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { ShopContext } from "../Context/Shopcontext";
 
 import assets from "../assets/assets";
@@ -137,6 +137,8 @@ const {setShowsearch ,getCartCount } = useContext(ShopContext);
 
       {/* Mobile nav */}
       <div className="flex justify-between mt-0  lg:hidden z-10">
+        <Link to={"/"} className="text-4xl font-semibold p-2">
+        
         <div
           style={{ display: "flex" }}
           className="flex gap-2 flex-row items-center p-4 "
@@ -145,24 +147,25 @@ const {setShowsearch ,getCartCount } = useContext(ShopContext);
             <img
               src="https://websitedemos.net/plant-store-02/wp-content/uploads/sites/410/2020/06/plants-store-logo-green.svg"
               alt=""
-              className="w-8 "
+              className="w-10 "
             />
           </div>
           <div>
-            <p className=" text-sm">Simply Nature</p>
+            <p className=" text-2xl">Simply Nature</p>
           </div>
         </div>
-        <div className="flex flex-row-reverse gap-5 sm:gap-10 p-4">
+         </Link>
+        <div className="flex flex-row-reverse gap-6 sm:gap-10 p-4">
           <i
             className="ri-menu-line text-3xl text-gray-600 hover:text-red-600 cursor-pointer mt-[9px]"
             onClick={() => setMenu(true)}
           ></i>
           <div className="cart-value">
-            <div className="flex gap-1 text-red-600 font-bold mt-4">
+            <div className="flex  ml-12 sm:gap-1 text-red-600 font-bold mt-4">
               <p>0.00$</p>
               <NavLink
                 to="/cart"
-                className="text-md text-gray-500 hover:text-gray-900"
+                className="text-md text-gray-500 relative -top-2  hover:text-gray-900"
               >
                 <i className="ri-shopping-cart-line text-red-600 text-bold font-bold"></i>
                 <p

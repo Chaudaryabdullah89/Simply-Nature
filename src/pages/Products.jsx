@@ -72,7 +72,7 @@ const handleMouseLeave = () => {
 };
 
   return productdata ? (
-    <div className=" max-w-[1280px] mx-auto">
+    <div className=" max-w-[1280px] mx-auto my-10 ">
       <div className="border-t-2 pt-10 mt-10 transition-all ease-in duration-500 text-center ">
         <div className="flex flex-col md:flex-row gap-12 ">
           {/* product image */}
@@ -114,7 +114,7 @@ const handleMouseLeave = () => {
             <p className="text-2xl font-semibold">
               {" "}
               {currency}
-              {productdata.price}{" "}
+              {productdata.price} <span className="text-lg font-normal" > + Free Delivery </span> 
             </p>
             <p className="py-5 text-gray-500"> {productdata.description} </p>
             <p className="text-xl font-semibold pb-2">Select The Size</p>
@@ -126,7 +126,7 @@ const handleMouseLeave = () => {
                   value={item}
                   className={`border ${
                     item === size ? "border-orange-500" : ""
-                  } py-2 px-4 bg-slate-100`}
+                  } py-2 px-4 bg-slate-100 `}
                 >
                   {item}
                 </button>
@@ -162,7 +162,7 @@ const handleMouseLeave = () => {
               onClick={() => {
                 addtocart(productdata._id, size);
               }}
-              className="px-8 mt-8 py-3 bg-black text-white w-fit"
+              className="px-8 py-2 bg-red-600 text-white mt-2 font-semibold rounded-full shadow-lg hover:bg-green-500  transition duration-300 ease-in-out transform hover:scale-105 w-fit"
             >
               Add To Cart
             </button>
